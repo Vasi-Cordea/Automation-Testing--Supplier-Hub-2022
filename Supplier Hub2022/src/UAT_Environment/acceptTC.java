@@ -31,7 +31,7 @@ public class acceptTC {
 
 
 	 	// navigate to emailtest page	 	 	
-        driver.get("https://mail.google.com/mail/u/0/#inbox"); 
+        driver.get("https://mail.emailTest.com/mail/u/0/#inbox"); 
        
         
     	
