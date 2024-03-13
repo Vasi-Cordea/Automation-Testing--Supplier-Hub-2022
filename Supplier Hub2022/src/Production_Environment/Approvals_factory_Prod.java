@@ -21,7 +21,7 @@ public class Approvals_factory_Prod {
 		 	WebDriver driver = new ChromeDriver();
 
 		 	// navigate to testing page
-		 	driver.get("https://hub-internal.boohoo-group.com");
+		 	driver.get("https://hub-internal.emailTest.com");
 
 		 	driver.manage().window().maximize();
 		 	 
@@ -30,7 +30,7 @@ public class Approvals_factory_Prod {
 		 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 		 			//type email 
-		 			driver.findElement(By.id("i0116")).sendKeys("PROD-FactoryApprover@boohoo.com");
+		 			driver.findElement(By.id("i0116")).sendKeys("PROD-FactoryApprover@emailTest.com");
 		 			
 		 			driver.findElement(By.id("idSIButton9")).click();
 		 			
@@ -51,6 +51,6 @@ public class Approvals_factory_Prod {
 		 					Thread.sleep(2000);
 		 					wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 							driver.findElement(Selectors.select_status).click();
-							driver.findElement(Selectors.boohooApproval).click();
+							driver.findElement(Selectors.testEnvironmentApproval).click();
 }
 }

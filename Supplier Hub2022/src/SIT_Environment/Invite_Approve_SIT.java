@@ -26,7 +26,7 @@ public class Invite_Approve_SIT {
 		WebDriver driver = new ChromeDriver();
 
 		// navigate to testing page
-		driver.get("https://int-supplier-portal.boohoo.com");
+		driver.get("https://int-supplier-portal.testEnvironment.com");
 
 		 driver.manage().window().maximize();
 		 
@@ -35,7 +35,7 @@ public class Invite_Approve_SIT {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 				//type email 
-				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@boohoo.com");
+				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@testEnvironment.com");
 				
 				driver.findElement(By.id("idSIButton9")).click();
 				
@@ -134,7 +134,7 @@ public class Invite_Approve_SIT {
 						
 					
 						
-						driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+SIT+"+rand_int1+"@gmail.com");
+						driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+SIT+"+rand_int1+"@emailtest.com");
 						
 						driver.findElement(Selectors.phoneCountryCode).click();
 						driver.findElement(Selectors.phoneCountryCode17).click();
@@ -154,7 +154,7 @@ public class Invite_Approve_SIT {
 						driver.findElement(Selectors.directorLastName).sendKeys("Khan");
 						
 						//generate random Int and type director email
-						driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+SITdirector+"+rand_int1+"@gmail.com");
+						driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+SITdirector+"+rand_int1+"@emailtest.com");
 						
 						driver.findElement(Selectors.otherDepartmentProduced).click();
 						

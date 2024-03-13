@@ -19,7 +19,7 @@ public class addNewFactory_UAT {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://uat-sh-external.boohoo.com");
+	 	driver.get("https://uat-sh-external.testEnvironment.com");
 
 	 	//Create object of Dimensions class
         Dimension d = new Dimension(720,920);
@@ -31,7 +31,7 @@ public class addNewFactory_UAT {
 	 	wait.until(ExpectedConditions.elementToBeClickable(SelectorExternal.SignIn));
 
 	 			//type email 
-	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+uat+8112@gmail.com");
+	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+uat+8112@emailtest.com");
 	 			driver.findElement(SelectorExternal.passwrord).sendKeys("Netsecured02!"); 			
 	 			
 	 			driver.findElement(SelectorExternal.SignIn).click();
@@ -81,7 +81,7 @@ public class addNewFactory_UAT {
 			
 			driver.findElement(SelectorExternal.contact_surname).sendKeys("SurName");
 			
-			driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2022+factoryEmail+uat"+rand_int1+"@gmail.com");
+			driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2022+factoryEmail+uat"+rand_int1+"@emailtest.com");
 			
 			driver.findElement(SelectorExternal.contact_phone_code).click();
 			driver.findElement(SelectorExternal.contact_phone_code34).click();
@@ -100,7 +100,7 @@ public class addNewFactory_UAT {
 				
 				driver.findElement(SelectorExternal.compliance_contact_first_name).sendKeys("Alain");
 				driver.findElement(SelectorExternal.compliance_contact_surname).sendKeys("Delon");
-				driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2022+factoryEthCompl+uat"+rand_int1+"@gmail.com");
+				driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2022+factoryEthCompl+uat"+rand_int1+"@emailtest.com");
 				
 				driver.findElement(SelectorExternal.compliance_phone_country_code).click();
 				driver.findElement(SelectorExternal.compliance_phone_country_code109).click();
@@ -115,7 +115,7 @@ public class addNewFactory_UAT {
 				driver.findElement(SelectorExternal.product_compliance_contact_first_name).sendKeys("ProductBOSS");
 				driver.findElement(SelectorExternal.product_compliance_contact_surname).sendKeys("BOSSSurname");
 				
-				driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2022+productBoss+uat"+rand_int1+"@gmail.com");
+				driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2022+productBoss+uat"+rand_int1+"@emailtest.com");
 				
 				driver.findElement(SelectorExternal.product_compliance_phone_country_code).click();
 
@@ -153,7 +153,7 @@ public class addNewFactory_UAT {
 			int rand_int3 = rand.nextInt(100);
 			driver.findElement(SelectorExternal.z_total_capacity).sendKeys(rand_int3+"1");
 			int rand_int4 = rand.nextInt(100);
-			driver.findElement(SelectorExternal.z_boohoo_capacity).sendKeys(rand_int4+"4");
+			driver.findElement(SelectorExternal.z_testEnvironment_capacity).sendKeys(rand_int4+"4");
 			int rand_int5 = rand.nextInt(1000);
 			driver.findElement(SelectorExternal.z_planned_order_capacity).sendKeys(rand_int5+"5");
 			int rand_int6 = rand.nextInt(10);
@@ -211,7 +211,7 @@ public class addNewFactory_UAT {
 					
 					driver.findElement(SelectorExternal.contact_surname).sendKeys("SurName");
 					
-					driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2022+factoryEmail+uat"+rand_int1+"@gmail.com");
+					driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2022+factoryEmail+uat"+rand_int1+"@emailtest.com");
 					
 					driver.findElement(SelectorExternal.contact_phone_code).click();
 					driver.findElement(SelectorExternal.contact_phone_code34).click();
@@ -230,7 +230,7 @@ public class addNewFactory_UAT {
 						
 						driver.findElement(SelectorExternal.compliance_contact_first_name).sendKeys("Alain");
 						driver.findElement(SelectorExternal.compliance_contact_surname).sendKeys("Delon");
-						driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2022+factoryEthCompl+uat"+rand_int1+"@gmail.com");
+						driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2022+factoryEthCompl+uat"+rand_int1+"@emailtest.com");
 						
 						driver.findElement(SelectorExternal.compliance_phone_country_code).click();
 						driver.findElement(SelectorExternal.compliance_phone_country_code109).click();
@@ -245,7 +245,7 @@ public class addNewFactory_UAT {
 						driver.findElement(SelectorExternal.product_compliance_contact_first_name).sendKeys("ProductBOSS");
 						driver.findElement(SelectorExternal.product_compliance_contact_surname).sendKeys("BOSSSurname");
 						
-						driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2022+productBoss+uat"+rand_int1+"@gmail.com");
+						driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2022+productBoss+uat"+rand_int1+"@emailtest.com");
 						
 						driver.findElement(SelectorExternal.product_compliance_phone_country_code).click();
 
@@ -283,7 +283,7 @@ public class addNewFactory_UAT {
 					int rand_int10 = rand.nextInt(100);
 					driver.findElement(SelectorExternal.z_total_capacity).sendKeys(rand_int10+"1");
 					int rand_int11 = rand.nextInt(100);
-					driver.findElement(SelectorExternal.z_boohoo_capacity).sendKeys(rand_int11+"4");
+					driver.findElement(SelectorExternal.z_testEnvironment_capacity).sendKeys(rand_int11+"4");
 					int rand_int12 = rand.nextInt(1000);
 					driver.findElement(SelectorExternal.z_planned_order_capacity).sendKeys(rand_int12+"5");
 					int rand_int13 = rand.nextInt(10);

@@ -20,7 +20,7 @@ public class Approvals_UAT_Factory {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://uat-supplier-portal.boohoo.com");
+	 	driver.get("https://uat-supplier-portal.testEnvironment.com");
 
 	 	 //Create object of Dimensions class
 	    Dimension d = new Dimension(800,1000);
@@ -30,15 +30,15 @@ public class Approvals_UAT_Factory {
 	 	// explicit wait - to wait for the Next button to be click-able
 	 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	 	
-	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.BoohooGroup));
-			driver.findElement(Selectors.BoohooGroup).click();
+	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.testEnvironmentGroup));
+			driver.findElement(Selectors.testEnvironmentGroup).click();
 			
 			driver.manage().window().maximize();
 			
 	 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 	 			//type email 
-	 			driver.findElement(By.id("i0116")).sendKeys("FactoryApprover@boohoo.com");
+	 			driver.findElement(By.id("i0116")).sendKeys("FactoryApprover@testEnvironment.com");
 	 			
 	 			driver.findElement(By.id("idSIButton9")).click();
 	 			
@@ -58,7 +58,7 @@ public class Approvals_UAT_Factory {
 	 					Thread.sleep(2000);
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 						driver.findElement(Selectors.select_status).click();
-						driver.findElement(Selectors.boohooApproval).click();
+						driver.findElement(Selectors.testEnvironmentApproval).click();
 						
 						
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));

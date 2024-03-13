@@ -28,7 +28,7 @@ public class Approvals_FactoryApp_SIT {
 			
 
 		// navigate to testing page
-		driver.get("https://int-supplier-portal.boohoo.com");
+		driver.get("https://int-supplier-portal.aaaa.com");
 
 		 driver.manage().window().maximize();
 		 
@@ -37,7 +37,7 @@ public class Approvals_FactoryApp_SIT {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 				//type email 
-				driver.findElement(By.id("i0116")).sendKeys("FactoryApprover@boohoo.com");
+				driver.findElement(By.id("i0116")).sendKeys("FactoryApprover@aaaaaa.com");
 				
 				driver.findElement(By.id("idSIButton9")).click();
 				

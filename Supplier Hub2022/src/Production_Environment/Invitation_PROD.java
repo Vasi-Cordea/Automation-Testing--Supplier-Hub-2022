@@ -26,7 +26,7 @@ public class Invitation_PROD {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://hub-internal.boohoo-group.com");
+	 	driver.get("https://hub-internal.emailTest.com");
 
 	 	driver.manage().window().maximize();
 	 	 
@@ -35,7 +35,7 @@ public class Invitation_PROD {
 	 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 	 			//type email 
-	 			driver.findElement(By.id("i0116")).sendKeys("Prod-InviteAppUser@boohoo.com");
+	 			driver.findElement(By.id("i0116")).sendKeys("Prod-InviteAppUser@emailTest.com");
 	 			
 	 			driver.findElement(By.id("idSIButton9")).click();
 	 			
@@ -122,7 +122,7 @@ public class Invitation_PROD {
 	 					
 	 				
 	 					
-	 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+Prod+"+rand_int1+"@gmail.com");
+	 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow789+Prod+"+rand_int1+"@emailTest.com");
 	 					
 	 					driver.findElement(Selectors.phoneCountryCode).click();
 	 					driver.findElement(Selectors.phoneCountryCode17).click();
@@ -142,7 +142,7 @@ public class Invitation_PROD {
 	 					driver.findElement(Selectors.directorLastName).sendKeys("Direct");
 	 					
 	 					//generate random integer and type director email
-	 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+Prod+"+rand_int1+"@gmail.com");
+	 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow345+Prod+"+rand_int1+"@emailTest.com");
 	 					
 	 					driver.findElement(Selectors.otherDepartmentProduced).click();
 	 					

@@ -30,7 +30,7 @@ WebDriver driver;
 		//driver.manage().window().maximize();
 		
 		// navigate to testing page
-		driver.get("https://int-supplier-portal.boohoo.com");
+		driver.get("https://int-supplier-portal.emailtest.com");
 
 		
 		 
@@ -39,7 +39,7 @@ WebDriver driver;
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 				//type email 
-				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@boohoo.com");
+				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@emailtest.com");
 				
 				driver.findElement(By.id("idSIButton9")).click();
 				
@@ -109,7 +109,7 @@ WebDriver driver;
 						
 					
 						
-						driver.findElement(Selectors.supplierEmail).sendKeys("robert.howe@boohoo.com");
+						driver.findElement(Selectors.supplierEmail).sendKeys("robert.howe@emailtest.com");
 						
 						driver.findElement(Selectors.phoneCountryCode).click();
 						driver.findElement(Selectors.phoneCountryCode17).click();
@@ -129,7 +129,7 @@ WebDriver driver;
 						driver.findElement(Selectors.directorLastName).sendKeys("Burgundy");
 						
 						//generate random Int and type director email
-						driver.findElement(Selectors.directorEmail).sendKeys("robert.howe@boohoo.com");
+						driver.findElement(Selectors.directorEmail).sendKeys("robert.howe@emailtest.com");
 						
 						driver.findElement(Selectors.otherDepartmentProduced).click();
 						

@@ -27,7 +27,7 @@ public class Invitation_approvalx2_UAT {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://uat-supplier-portal.boohoo.com");
+	 	driver.get("https://uat-supplier-portal.testEnvironment.com");
 
 	 	 //Create object of Dimensions class
 	    Dimension d = new Dimension(800,1000);
@@ -37,15 +37,15 @@ public class Invitation_approvalx2_UAT {
 	 	// explicit wait - to wait for the Next button to be click-able
 	 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	 	
-	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.BoohooGroup));
-			driver.findElement(Selectors.BoohooGroup).click();
+	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.testEnvironmentGroup));
+			driver.findElement(Selectors.testEnvironmentGroup).click();
 			
 			driver.manage().window().maximize();
 			
 	 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 	 			//type email 
-	 			driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@boohoo.com");
+	 			driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@testEnvironment.com");
 	 			
 	 			driver.findElement(By.id("idSIButton9")).click();
 	 			
@@ -143,7 +143,7 @@ public class Invitation_approvalx2_UAT {
 	 					
 	 				
 	 					
-	 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+UAT+"+generatedString+"@gmail.com");
+	 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+UAT+"+generatedString+"@emailtest.com");
 	 					
 	 					driver.findElement(Selectors.phoneCountryCode).click();
 	 					driver.findElement(Selectors.phoneCountryCode17).click();
@@ -163,7 +163,7 @@ public class Invitation_approvalx2_UAT {
 	 					driver.findElement(Selectors.directorLastName).sendKeys("Musk");
 	 					
 	 					//generate random Int and type director email
-	 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+UAT+"+generatedString+"@gmail.com");
+	 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+UAT+"+generatedString+"@emailtest.com");
 	 					
 	 					driver.findElement(Selectors.otherDepartmentProduced).click();
 	 					
@@ -276,7 +276,7 @@ public class Invitation_approvalx2_UAT {
 	 					 					
 	 					 				
 	 					 					
-	 					 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+UAT+"+rand_int3+"@gmail.com");
+	 					 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+UAT+"+rand_int3+"@emailtest.com");
 	 					 					
 	 					 					driver.findElement(Selectors.phoneCountryCode).click();
 	 					 					driver.findElement(Selectors.phoneCountryCode17).click();
@@ -296,7 +296,7 @@ public class Invitation_approvalx2_UAT {
 	 					 					driver.findElement(Selectors.directorLastName).sendKeys("Director");
 	 					 					
 	 					 					//generate random Int and type director email
-	 					 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+UAT+"+rand_int3+"@gmail.com");
+	 					 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+UAT+"+rand_int3+"@emailtest.com");
 	 					 					
 	 					 					driver.findElement(Selectors.otherDepartmentProduced).click();
 	 					 					

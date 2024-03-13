@@ -30,7 +30,7 @@ public class Approvals_PROD_suite4 {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://hub-internal.boohoo-group.com");
+	 	driver.get("https://hub-internal.emailTest.com");
 
 	 	driver.manage().window().maximize();
 	 	 
@@ -39,7 +39,7 @@ public class Approvals_PROD_suite4 {
 	 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 	 			//type email 
-	 			driver.findElement(By.id("i0116")).sendKeys("PROD-FactoryApprover@boohoo.com");
+	 			driver.findElement(By.id("i0116")).sendKeys("PROD-FactoryApprover@emailTest.com");
 	 			
 	 			driver.findElement(By.id("idSIButton9")).click();
 	 			
@@ -60,7 +60,7 @@ public class Approvals_PROD_suite4 {
 	 					Thread.sleep(2000);
 	 					wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 						driver.findElement(Selectors.select_status).click();
-						driver.findElement(Selectors.boohooApproval).click();
+						driver.findElement(Selectors.testEnvironmentApproval).click();
 						
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
 						driver.findElement(Selectors.search_application).sendKeys(str);
@@ -125,7 +125,7 @@ public class Approvals_PROD_suite4 {
 						 	WebDriver driver = new ChromeDriver();
 
 						 	// navigate to testing page
-						 	driver.get("https://hub-internal.boohoo-group.com");
+						 	driver.get("https://hub-internal.emailTest.com");
 
 						 	 //Create object of Dimensions class
 						    Dimension d = new Dimension(800,1000);
@@ -142,7 +142,7 @@ public class Approvals_PROD_suite4 {
 						 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 						 			//type email 
-						 			driver.findElement(By.id("i0116")).sendKeys("PROD-EthicalApp@boohoo.com");
+						 			driver.findElement(By.id("i0116")).sendKeys("PROD-EthicalApp@emailTest.com");
 						 			
 						 			driver.findElement(By.id("idSIButton9")).click();
 						 			
@@ -162,7 +162,7 @@ public class Approvals_PROD_suite4 {
 						 					Thread.sleep(2000);
 											wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 											driver.findElement(Selectors.select_status).click();
-											driver.findElement(Selectors.boohooApproval).click();
+											driver.findElement(Selectors.testEnvironmentApproval).click();
 											
 											wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
 											driver.findElement(Selectors.search_application).sendKeys(str);
@@ -172,7 +172,7 @@ public class Approvals_PROD_suite4 {
 											driver.findElement(Selectors.Review_application).click();
 											wait.until(ExpectedConditions.elementToBeClickable(Selectors.Approve_4));
 											driver.findElement(Selectors.Approve_4).click();
-											driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for boohoo group plc");
+											driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for testEnvironment group plc");
 											driver.findElement(Selectors.finance_appConsentBox).click();
 											driver.findElement(Selectors.ethic_Approved).click();
 											
@@ -190,7 +190,7 @@ public class Approvals_PROD_suite4 {
 						 	WebDriver driver = new ChromeDriver();
 
 						 	// navigate to testing page
-						 	driver.get("https://hub-internal.boohoo-group.com");
+						 	driver.get("https://hub-internal.testEnvironment-group.com");
 
 						 	 //Create object of Dimensions class
 						    Dimension d = new Dimension(800,1000);
@@ -207,7 +207,7 @@ public class Approvals_PROD_suite4 {
 						 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 						 			//type email 
-						 			driver.findElement(By.id("i0116")).sendKeys("PROD-SourcingApprove@boohoo.com");
+						 			driver.findElement(By.id("i0116")).sendKeys("PROD-SourcingApprove@emailTest.com");
 						 			
 						 			driver.findElement(By.id("idSIButton9")).click();
 						 			
@@ -227,7 +227,7 @@ public class Approvals_PROD_suite4 {
 						 					Thread.sleep(2000);
 											wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 											driver.findElement(Selectors.select_status).click();
-											driver.findElement(Selectors.boohooApproval).click();
+											driver.findElement(Selectors.testEnvironmentApproval).click();
 											
 											wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
 											driver.findElement(Selectors.search_application).sendKeys(str);
@@ -237,7 +237,7 @@ public class Approvals_PROD_suite4 {
 											driver.findElement(Selectors.Review_application).click();
 											wait.until(ExpectedConditions.elementToBeClickable(Selectors.Approve_4));
 											driver.findElement(Selectors.Approve_4).click();
-											driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for boohoo group plc");
+											driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for testEnvironment group plc");
 											driver.findElement(Selectors.finance_appConsentBox).click();
 											driver.findElement(Selectors.ethic_Approved).click();
 											
@@ -255,7 +255,7 @@ public class Approvals_PROD_suite4 {
 											 	WebDriver driver = new ChromeDriver();
 
 											 	// navigate to testing page
-											 	driver.get("https://hub-internal.boohoo-group.com");
+											 	driver.get("https://hub-internal.emailTest.com");
 
 											 	 //Create object of Dimensions class
 											    Dimension d = new Dimension(800,1000);
@@ -272,7 +272,7 @@ public class Approvals_PROD_suite4 {
 											 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 											 			//type email 
-											 			driver.findElement(By.id("i0116")).sendKeys("PROD-FinanceApprover@boohoo.com");
+											 			driver.findElement(By.id("i0116")).sendKeys("PROD-FinanceApprover@emailTest.com");
 											 			
 											 			driver.findElement(By.id("idSIButton9")).click();
 											 			
@@ -292,7 +292,7 @@ public class Approvals_PROD_suite4 {
 											 					Thread.sleep(2000);
 											 					wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 																driver.findElement(Selectors.select_status).click();
-																driver.findElement(Selectors.boohooApproval).click();
+																driver.findElement(Selectors.testEnvironmentApproval).click();
 																
 																wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
 																driver.findElement(Selectors.search_application).sendKeys(str);

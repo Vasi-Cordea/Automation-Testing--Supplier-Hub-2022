@@ -21,7 +21,7 @@ public static void main (String args[]) throws InterruptedException {
 	 	WebDriver driver = new ChromeDriver();
 
 	 // navigate to testing page
-	 	 	driver.get("https://int-sh-external.boohoo.com");
+	 	 	driver.get("https://int-sh-external.emailTest.com");
 	 	 	
 	 	 	 //Create object of Dimensions class
 	        Dimension d = new Dimension(800,1000);
@@ -44,8 +44,8 @@ public static void main (String args[]) throws InterruptedException {
 //           Setup new password	 			
  	 			
  	 			wait.until(ExpectedConditions.elementToBeClickable(SelectorExternal.sendNewpass));
- 	 			driver.findElement(SelectorExternal.newPasswrord).sendKeys("Netsecured02!");
- 	 			 driver.findElement(SelectorExternal.confirmPasswrord).sendKeys("Netsecured02!"); 	
+ 	 			driver.findElement(SelectorExternal.newPasswrord).sendKeys("12345");
+ 	 			 driver.findElement(SelectorExternal.confirmPasswrord).sendKeys("12345"); 	
  	 			
   			driver.findElement(SelectorExternal.sendNewpass).click();
  	 			
@@ -127,7 +127,7 @@ public static void main (String args[]) throws InterruptedException {
  	 			
  	 			driver.findElement(SelectorExternal.contact_surname).sendKeys("SurName");
  	 			
- 	 			driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2022+factoryEmail+uat"+rand_int1+"@gmail.com");
+ 	 			driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2024+factoryEmail+uat"+rand_int1+"@emailTest.com");
  	 			
  	 			driver.findElement(SelectorExternal.contact_phone_code).click();
  	 			driver.findElement(SelectorExternal.contact_phone_code34).click();
@@ -146,7 +146,7 @@ public static void main (String args[]) throws InterruptedException {
   					
   					driver.findElement(SelectorExternal.compliance_contact_first_name).sendKeys("Alain");
   					driver.findElement(SelectorExternal.compliance_contact_surname).sendKeys("Delon");
-  					driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2022+factoryEthCompl+uat"+rand_int1+"@gmail.com");
+  					driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2025+factoryEthCompl+uat"+rand_int1+"@emailTest.com");
   					
   					driver.findElement(SelectorExternal.compliance_phone_country_code).click();
   					driver.findElement(SelectorExternal.compliance_phone_country_code109).click();
@@ -161,7 +161,7 @@ public static void main (String args[]) throws InterruptedException {
   					driver.findElement(SelectorExternal.product_compliance_contact_first_name).sendKeys("ProductBOSS");
   					driver.findElement(SelectorExternal.product_compliance_contact_surname).sendKeys("BOSSSurname");
   					
-  					driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2022+productBoss+uat"+rand_int1+"@gmail.com");
+  					driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2024+productBoss+uat"+rand_int1+"@emailTest.com");
   					
   					driver.findElement(SelectorExternal.product_compliance_phone_country_code).click();
 
@@ -199,7 +199,7 @@ public static void main (String args[]) throws InterruptedException {
     				int rand_int3 = rand.nextInt(100);
     				driver.findElement(SelectorExternal.z_total_capacity).sendKeys(rand_int3+"1");
     				int rand_int4 = rand.nextInt(100);
-    				driver.findElement(SelectorExternal.z_boohoo_capacity).sendKeys(rand_int4+"4");
+    				driver.findElement(SelectorExternal.z_someEmailProvider_capacity).sendKeys(rand_int4+"4");
     				int rand_int5 = rand.nextInt(1000);
     				driver.findElement(SelectorExternal.z_planned_order_capacity).sendKeys(rand_int5+"5");
     				int rand_int6 = rand.nextInt(10);
@@ -288,7 +288,7 @@ public static void main (String args[]) throws InterruptedException {
 						 driver.findElement(SelectorExternal.first_name).sendKeys("Lewis");
 						 driver.findElement(SelectorExternal.last_name).sendKeys("Hamilton");
 						 driver.findElement(SelectorExternal.other_name).sendKeys("Leviston");
-						 driver.findElement(SelectorExternal.email).sendKeys("qualitynow2022+acount"+rand_int1+"@gmail.com");
+						 driver.findElement(SelectorExternal.email).sendKeys("qualitynow2028+acount"+rand_int1+"@emailTest.com");
 						 
 							
 						 driver.findElement(SelectorExternal.phone_country_code).click();
@@ -311,7 +311,7 @@ public static void main (String args[]) throws InterruptedException {
  							 driver.findElement(SelectorExternal.first_name2).sendKeys("Gerard");
  							 driver.findElement(SelectorExternal.last_name2).sendKeys("Thomas");
  							 driver.findElement(SelectorExternal.other_name2).sendKeys("Tommy");
- 							 driver.findElement(SelectorExternal.email2).sendKeys("qualitynow2022+chairman"+rand_int1+"@gmail.com");
+ 							 driver.findElement(SelectorExternal.email2).sendKeys("qualitynow2026+chairman"+rand_int1+"@emailTest.com");
  							 
  								
  							driver.findElement(SelectorExternal.phone_country_code2).click();
@@ -357,7 +357,7 @@ public static void main (String args[]) throws InterruptedException {
 	 		    				driver.findElement(SelectorExternal.contactFinanceTitle8).click();	 		    				
 	 		    				driver.findElement(SelectorExternal.finance_first_name).sendKeys("George");	 		    				
 	 		    				driver.findElement(SelectorExternal.finance_last_name).sendKeys("Cazacu");	 		    				
-	 		    				driver.findElement(SelectorExternal.finance_contact_email).sendKeys("Georgecazacu"+rand_int1+"@gmail.com");	 		    			
+	 		    				driver.findElement(SelectorExternal.finance_contact_email).sendKeys("Georgecazacutzu"+rand_int1+"@emailTest.com");	 		    			
 	 		    				driver.findElement(SelectorExternal.finance_phone_code).click();	 		    				
 	 		    				driver.findElement(SelectorExternal.finance_phone_code5).click();	 		    				
 	 		    				driver.findElement(SelectorExternal.finance_phone_number).sendKeys("07448"+rand_int1);	 		    				 

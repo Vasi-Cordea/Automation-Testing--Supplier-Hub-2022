@@ -19,7 +19,7 @@ public class Approvals_Finance_SIT {
 		WebDriver driver = new ChromeDriver();
 
 		// navigate to testing page
-		driver.get("https://int-supplier-portal.boohoo.com");
+		driver.get("https://int-supplier-portal.aaaaaaa.com");
 
 		 driver.manage().window().maximize();
 		 
@@ -28,7 +28,7 @@ public class Approvals_Finance_SIT {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 				//type email 
-				driver.findElement(By.id("i0116")).sendKeys("FinanceApprover@boohoo.com");
+				driver.findElement(By.id("i0116")).sendKeys("FinanceApprover@aaaaaa.com");
 				
 				driver.findElement(By.id("idSIButton9")).click();
 				
@@ -46,7 +46,7 @@ public class Approvals_Finance_SIT {
 						Thread.sleep(2000);
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 						driver.findElement(Selectors.select_status).click();
-						driver.findElement(Selectors.boohooApproval).click();
+						driver.findElement(Selectors.testEnvironmentApproval).click();
 						
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
 						driver.findElement(Selectors.search_application).sendKeys(str);

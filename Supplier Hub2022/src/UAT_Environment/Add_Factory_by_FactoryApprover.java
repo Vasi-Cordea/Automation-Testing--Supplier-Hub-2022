@@ -24,7 +24,7 @@ public class Add_Factory_by_FactoryApprover {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://uat-supplier-portal.boohoo.com");
+	 	driver.get("https://uat-supplier-portal.testEnvironment.com");
 
 	 	 //Create object of Dimensions class
 	    Dimension d = new Dimension(800,1000);
@@ -34,15 +34,15 @@ public class Add_Factory_by_FactoryApprover {
 	 	// explicit wait - to wait for the Next button to be click-able
 	 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	 	
-	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.BoohooGroup));
-			driver.findElement(Selectors.BoohooGroup).click();
+	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.testEnvironmentGroup));
+			driver.findElement(Selectors.testEnvironmentGroup).click();
 			
 			driver.manage().window().maximize();
 			
 	 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 	 			//type email 
-	 			driver.findElement(By.id("i0116")).sendKeys("FactoryApprover@boohoo.com");
+	 			driver.findElement(By.id("i0116")).sendKeys("FactoryApprover@testEnvironment.com");
 	 			
 	 			driver.findElement(By.id("idSIButton9")).click();
 	 			
@@ -63,7 +63,7 @@ public class Add_Factory_by_FactoryApprover {
 	 					Thread.sleep(2000);
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 						driver.findElement(Selectors.select_status).click();
-						driver.findElement(Selectors.boohooApproval).click();
+						driver.findElement(Selectors.testEnvironmentApproval).click();
 						
 						
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
@@ -110,7 +110,7 @@ public class Add_Factory_by_FactoryApprover {
 						
 						driver.findElement(SelectorExternal.contact_surname).sendKeys("SurName");
 						
-						driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2022+factoryEmail+uat"+rand_int1+"@gmail.com");
+						driver.findElement(SelectorExternal.contact_email).sendKeys("qualitynow2022+factoryEmail+uat"+rand_int1+"@emailtest.com");
 						
 						driver.findElement(SelectorExternal.contact_phone_code).click();
 						driver.findElement(SelectorExternal.contact_phone_code34).click();
@@ -129,7 +129,7 @@ public class Add_Factory_by_FactoryApprover {
 							
 							driver.findElement(SelectorExternal.compliance_contact_first_name).sendKeys("Alain");
 							driver.findElement(SelectorExternal.compliance_contact_surname).sendKeys("Delon");
-							driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2022+factoryEthCompl+uat"+rand_int1+"@gmail.com");
+							driver.findElement(SelectorExternal.compliance_contact_email).sendKeys("qualitynow2022+factoryEthCompl+uat"+rand_int1+"@emailtest.com");
 							
 							driver.findElement(SelectorExternal.compliance_phone_country_code).click();
 							driver.findElement(SelectorExternal.compliance_phone_country_code109).click();
@@ -144,7 +144,7 @@ public class Add_Factory_by_FactoryApprover {
 							driver.findElement(SelectorExternal.product_compliance_contact_first_name).sendKeys("ProductBOSS");
 							driver.findElement(SelectorExternal.product_compliance_contact_surname).sendKeys("BOSSSurname");
 							
-							driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2022+productBoss+uat"+rand_int1+"@gmail.com");
+							driver.findElement(SelectorExternal.product_compliance_contact_email).sendKeys("qualitynow2022+productBoss+uat"+rand_int1+"@emailtest.com");
 							
 							driver.findElement(SelectorExternal.product_compliance_phone_country_code).click();
 
@@ -182,7 +182,7 @@ public class Add_Factory_by_FactoryApprover {
 						int rand_int3 = rand.nextInt(100);
 						driver.findElement(SelectorExternal.z_total_capacity).sendKeys(rand_int3+"1");
 						int rand_int4 = rand.nextInt(100);
-						driver.findElement(SelectorExternal.z_boohoo_capacity).sendKeys(rand_int4+"4");
+						driver.findElement(SelectorExternal.z_testEnvironment_capacity).sendKeys(rand_int4+"4");
 						int rand_int5 = rand.nextInt(1000);
 						driver.findElement(SelectorExternal.z_planned_order_capacity).sendKeys(rand_int5+"5");
 						int rand_int6 = rand.nextInt(10);

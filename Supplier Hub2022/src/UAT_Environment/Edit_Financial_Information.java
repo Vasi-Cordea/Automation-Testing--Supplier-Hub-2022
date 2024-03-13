@@ -23,7 +23,7 @@ public class Edit_Financial_Information {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://uat-sh-external.boohoo.com");
+	 	driver.get("https://uat-sh-external.testEnvironment.com");
 	 	
 		 
  	 	
@@ -39,7 +39,7 @@ public class Edit_Financial_Information {
  	 	wait.until(ExpectedConditions.elementToBeClickable(SelectorExternal.SignIn));
 
  	 			//type email 
- 	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+UAT+2302@gmail.com");
+ 	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+UAT+2302@emailtest.com");
  	 			driver.findElement(SelectorExternal.passwrord).sendKeys("Netsecured02!"); 			
  	 			
 

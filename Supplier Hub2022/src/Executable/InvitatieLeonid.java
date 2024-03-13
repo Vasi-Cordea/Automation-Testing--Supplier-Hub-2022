@@ -26,7 +26,7 @@ public class InvitatieLeonid {
 
 	
 	// navigate to testing page
-	driver.get("https://int-supplier-portal.boohoo.com");
+	driver.get("https://int-supplier-portal.someEmailProvider.com");
 
 	
 	 
@@ -35,7 +35,7 @@ public class InvitatieLeonid {
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 			//type email 
-			driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@boohoo.com");
+			driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@someEmailProvider.com");
 			
 			driver.findElement(By.id("idSIButton9")).click();
 			
@@ -113,7 +113,7 @@ public class InvitatieLeonid {
 					
 				
 					
-					driver.findElement(Selectors.supplierEmail).sendKeys("leonidkoida+supplierEmail+"+rand_int1+"@gmail.com");
+					driver.findElement(Selectors.supplierEmail).sendKeys("leonidkoida+supplierEmail+"+rand_int1+"@email.com");
 					
 					driver.findElement(Selectors.phoneCountryCode).click();
 					driver.findElement(Selectors.phoneCountryCode17).click();
@@ -133,7 +133,7 @@ public class InvitatieLeonid {
 					driver.findElement(Selectors.directorLastName).sendKeys("Burgundy");
 					
 					//generate random Int and type director email
-					driver.findElement(Selectors.directorEmail).sendKeys("leonidkoida+supplierEmail+"+rand_int1+"@gmail.com");
+					driver.findElement(Selectors.directorEmail).sendKeys("leonidkoida+supplierEmail+"+rand_int1+"@email.com");
 					
 					driver.findElement(Selectors.otherDepartmentProduced).click();
 					

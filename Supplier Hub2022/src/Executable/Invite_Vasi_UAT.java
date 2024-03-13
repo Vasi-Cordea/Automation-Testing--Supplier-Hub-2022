@@ -23,7 +23,7 @@ public class Invite_Vasi_UAT {
  	WebDriver driver = new ChromeDriver();
 
  	// navigate to testing page
- 	driver.get("https://uat-supplier-portal.boohoo.com");
+ 	driver.get("https://uat-supplier-portal.someEmailProvider.com");
  	
  	 //Create object of Dimensions class
     Dimension d = new Dimension(800,960);
@@ -34,15 +34,15 @@ public class Invite_Vasi_UAT {
  	// explicit wait - to wait for the Next button to be click-able
  	WebDriverWait wait = new WebDriverWait(driver, 10);
  	
- 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.BoohooGroup));
-		driver.findElement(Selectors.BoohooGroup).click();
+ 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.someEmailProviderGroup));
+		driver.findElement(Selectors.someEmailProviderGroup).click();
 		
 		driver.manage().window().maximize();
 		
  	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
  			//type email 
- 			driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@boohoo.com");
+ 			driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@email.com");
  			
  			driver.findElement(By.id("idSIButton9")).click();
  			
@@ -142,7 +142,7 @@ public class Invite_Vasi_UAT {
  					
  				
  					
- 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+UAT"+rand_int1+"@gmail.com");
+ 					driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+UAT"+rand_int1+"@email.com");
  					
  					driver.findElement(Selectors.phoneCountryCode).click();
  					driver.findElement(Selectors.phoneCountryCode17).click();
@@ -164,7 +164,7 @@ public class Invite_Vasi_UAT {
  					driver.findElement(Selectors.directorLastName).sendKeys("Dobrin");
  					
  					//generate random Int and type director email
- 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+UAT"+rand_int1+"@gmail.com");
+ 					driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+UAT"+rand_int1+"@email.com");
  					
  					driver.findElement(Selectors.otherDepartmentProduced).click();
  					

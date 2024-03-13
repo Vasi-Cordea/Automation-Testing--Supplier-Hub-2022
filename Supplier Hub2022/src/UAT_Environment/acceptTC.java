@@ -27,25 +27,21 @@ public class acceptTC {
  	WebDriver driver = new ChromeDriver();
 
 
- 	//    https://www.npmjs.com/package/gmail-tester
-// 	your client id
-// 	254490359198-rigoilcdtmc5os40bfe27naohfiitsr5.apps.googleusercontent.com
-// 	your client secret
-// 	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
 
 
-	 	// navigate to Gmail page	 	 	
+
+	 	// navigate to emailtest page	 	 	
         driver.get("https://mail.google.com/mail/u/0/#inbox"); 
        
         
     	
-        driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("qualitynow2022@gmail.com");
+        driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("qualitynow2222@emailtest.com");
         driver.findElement(By.xpath("//span[text()='Next']")).click();
   
      	//login to email
         WebDriverWait wait = new WebDriverWait(driver, 8);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='Passwd']")));
-        driver.findElement(By.xpath("//input[@name='Passwd']")).sendKeys("securityKey12#"); 
+        driver.findElement(By.xpath("//input[@name='Passwd']")).sendKeys("1234#"); 
         driver.findElement(By.xpath("//span[text()='Next']")).click();
         
         //search for TC emails unread

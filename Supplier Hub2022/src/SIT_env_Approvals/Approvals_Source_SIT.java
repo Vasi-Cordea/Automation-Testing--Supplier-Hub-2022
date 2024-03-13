@@ -18,7 +18,7 @@ public class Approvals_Source_SIT {
 		WebDriver driver = new ChromeDriver();
 
 		// navigate to testing page
-		driver.get("https://int-supplier-portal.boohoo.com");
+		driver.get("https://int-supplier-portal.aaaaaaa.com");
 
 		 driver.manage().window().maximize();
 		 
@@ -27,7 +27,7 @@ public class Approvals_Source_SIT {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 				//type email 
-				driver.findElement(By.id("i0116")).sendKeys("SourcingApprover@boohoo.com");
+				driver.findElement(By.id("i0116")).sendKeys("SourcingApprover@aaaaaaa.com");
 				
 				driver.findElement(By.id("idSIButton9")).click();
 				
@@ -45,7 +45,7 @@ public class Approvals_Source_SIT {
 //						Thread.sleep(2000);
 //						wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 //						driver.findElement(Selectors.select_status).click();
-//						driver.findElement(Selectors.boohooApproval).click();
+//						driver.findElement(Selectors.testEnvironmentApproval).click();
 						//Thread.sleep(500);
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
 						driver.findElement(Selectors.search_application).sendKeys(str);
@@ -57,7 +57,7 @@ public class Approvals_Source_SIT {
 						
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.Approve_4));
 						driver.findElement(Selectors.Approve_4).click();
-						driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for boohoo group plc");
+						driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for testEnvironment group plc");
 						driver.findElement(Selectors.finance_appConsentBox).click();
 						driver.findElement(Selectors.ethic_Approved).click();
 

@@ -23,7 +23,7 @@ public class InviteVasiSITexe {
 		WebDriver driver = new ChromeDriver();
 
 		// navigate to testing page
-		driver.get("https://int-supplier-portal.boohoo.com");
+		driver.get("https://int-supplier-portal.emailtest.com");
 
 		 driver.manage().window().maximize();
 		 
@@ -32,7 +32,7 @@ public class InviteVasiSITexe {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 				//type email 
-				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@boohoo.com");
+				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@emailtest.com");
 				
 				driver.findElement(By.id("idSIButton9")).click();
 				
@@ -130,7 +130,7 @@ public class InviteVasiSITexe {
 						
 					
 						
-						driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+SIT+"+rand_int1+"@gmail.com");
+						driver.findElement(Selectors.supplierEmail).sendKeys("qualitynow2022+SIT+"+rand_int1+"@emailtest.com");
 						
 						driver.findElement(Selectors.phoneCountryCode).click();
 						driver.findElement(Selectors.phoneCountryCode17).click();
@@ -150,7 +150,7 @@ public class InviteVasiSITexe {
 						driver.findElement(Selectors.directorLastName).sendKeys("Kirk");
 						
 						//generate random Int and type director email
-						driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+SIT+"+rand_int1+"@gmail.com");
+						driver.findElement(Selectors.directorEmail).sendKeys("qualitynow2022+SIT+"+rand_int1+"@emailtest.com");
 						
 						driver.findElement(Selectors.otherDepartmentProduced).click();
 						

@@ -20,7 +20,7 @@ public class edit_Contact_Info_UAT {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://uat-sh-external.boohoo.com");
+	 	driver.get("https://uat-sh-external.testEnvironment.com");
 	 	
 		 
  	 	
@@ -36,7 +36,7 @@ public class edit_Contact_Info_UAT {
  	 	wait.until(ExpectedConditions.elementToBeClickable(SelectorExternal.SignIn));
 
  	 			//type email 
- 	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+UAT+2302@gmail.com");
+ 	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+UAT+2302@emailtest.com");
  	 			driver.findElement(SelectorExternal.passwrord).sendKeys("Netsecured02!"); 			
  	 			
 
@@ -67,7 +67,7 @@ public class edit_Contact_Info_UAT {
 						 driver.findElement(SelectorExternal.first_name).sendKeys("Lewis");
 						 driver.findElement(SelectorExternal.last_name).sendKeys("Hamilton");
 						 driver.findElement(SelectorExternal.other_name).sendKeys("Leviston");
-						 driver.findElement(SelectorExternal.email).sendKeys("qualitynow2022+acount"+rand_int1+"@gmail.com");
+						 driver.findElement(SelectorExternal.email).sendKeys("qualitynow2022+acount"+rand_int1+"@emailtest.com");
 						 
 							
 						 driver.findElement(SelectorExternal.phone_country_code).click();
@@ -90,7 +90,7 @@ public class edit_Contact_Info_UAT {
 						 driver.findElement(SelectorExternal.first_name2).sendKeys("Gerard");
 						 driver.findElement(SelectorExternal.last_name2).sendKeys("Thomas");
 						 driver.findElement(SelectorExternal.other_name2).sendKeys("Tommy");
-						 driver.findElement(SelectorExternal.email2).sendKeys("qualitynow2022"+rand_int1+"@gmail.com");
+						 driver.findElement(SelectorExternal.email2).sendKeys("qualitynow2022"+rand_int1+"@emailtest.com");
 						 
 						
 						driver.findElement(SelectorExternal.phone_country_code2).click();
@@ -136,7 +136,7 @@ public class edit_Contact_Info_UAT {
 	    				driver.findElement(SelectorExternal.contactFinanceTitle8).click();	 		    				
 	    				driver.findElement(SelectorExternal.finance_first_name).sendKeys("George");	 		    				
 	    				driver.findElement(SelectorExternal.finance_last_name).sendKeys("Cazacu");	 		    				
-	    				driver.findElement(SelectorExternal.finance_contact_email).sendKeys("Georgecazacu"+rand_int1+"@gmail.com");	 		    			
+	    				driver.findElement(SelectorExternal.finance_contact_email).sendKeys("Georgecazacu"+rand_int1+"@emailtest.com");	 		    			
 	    				driver.findElement(SelectorExternal.finance_phone_code).click();	 		    				
 	    				driver.findElement(SelectorExternal.finance_phone_code5).click();	 		    				
 	    				driver.findElement(SelectorExternal.finance_phone_number).sendKeys("07448"+rand_int1);	 		    				 

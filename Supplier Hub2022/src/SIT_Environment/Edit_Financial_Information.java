@@ -23,7 +23,7 @@ public class Edit_Financial_Information {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://int-sh-external.boohoo.com");
+	 	driver.get("https://int-sh-external.testEnvironment.com");
 
 		 //Create object of Dimensions class
 	    Dimension d = new Dimension(800,1000);
@@ -36,7 +36,7 @@ public class Edit_Financial_Information {
 	 	wait.until(ExpectedConditions.elementToBeClickable(SelectorExternal.SignIn));
 	 	//driver.manage().window().maximize();
 	 			//type email 
-	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+sit+570@gmail.com");
+	 			driver.findElement(SelectorExternal.username).sendKeys("qualitynow2022+sit+570@emailtest.com");
 	 			driver.findElement(SelectorExternal.passwrord).sendKeys("Netsecured02!"); 	
 	 			driver.findElement(SelectorExternal.SignIn).click();
 	 			

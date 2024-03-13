@@ -22,7 +22,7 @@ public class InviteAndreeaExe {
 		WebDriver driver = new ChromeDriver();
 
 		// navigate to testing page
-		driver.get("https://int-supplier-portal.boohoo.com");
+		driver.get("https://int-supplier-portal.email.com");
 
 		 driver.manage().window().maximize();
 		 
@@ -31,7 +31,7 @@ public class InviteAndreeaExe {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 				//type email 
-				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@boohoo.com");
+				driver.findElement(By.id("i0116")).sendKeys("InviteApproverUser@emailtest.com");
 				
 				driver.findElement(By.id("idSIButton9")).click();
 				
@@ -130,7 +130,7 @@ public class InviteAndreeaExe {
 					
 				
 					
-					driver.findElement(Selectors.supplierEmail).sendKeys("contdetest.bh+supplierEmail+"+rand_int1+"@gmail.com");
+					driver.findElement(Selectors.supplierEmail).sendKeys("contdetest.bh+supplierEmail+"+rand_int1+"@emailtest.com");
 					
 					driver.findElement(Selectors.phoneCountryCode).click();
 					driver.findElement(Selectors.phoneCountryCode17).click();
@@ -150,7 +150,7 @@ public class InviteAndreeaExe {
 					driver.findElement(Selectors.directorLastName).sendKeys("Kingsman");
 					
 					//generate random Int and type director email
-					driver.findElement(Selectors.directorEmail).sendKeys("contdetest.bh+app.exe+"+rand_int1+"@gmail.com");
+					driver.findElement(Selectors.directorEmail).sendKeys("contdetest.bh+app.exe+"+rand_int1+"@emailtest.com");
 					
 					driver.findElement(Selectors.otherDepartmentProduced).click();
 					

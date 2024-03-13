@@ -20,7 +20,7 @@ public class Approval_UAT_Source {
 	 	WebDriver driver = new ChromeDriver();
 
 	 	// navigate to testing page
-	 	driver.get("https://uat-supplier-portal.boohoo.com");
+	 	driver.get("https://uat-supplier-portal.testEnvironment.com");
 
 	 	 //Create object of Dimensions class
 	    Dimension d = new Dimension(800,1000);
@@ -30,15 +30,15 @@ public class Approval_UAT_Source {
 	 	// explicit wait - to wait for the Next button to be click-able
 	 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	 	
-	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.BoohooGroup));
-			driver.findElement(Selectors.BoohooGroup).click();
+	 	wait.until(ExpectedConditions.elementToBeClickable(Selectors.testEnvironmentGroup));
+			driver.findElement(Selectors.testEnvironmentGroup).click();
 			
 			driver.manage().window().maximize();
 			
 	 	wait.until(ExpectedConditions.elementToBeClickable(By.id("i0116")));
 
 	 			//type email 
-	 			driver.findElement(By.id("i0116")).sendKeys("SourcingApprover@boohoo.com");
+	 			driver.findElement(By.id("i0116")).sendKeys("SourcingApprover@testEnvironment.com");
 	 			
 	 			driver.findElement(By.id("idSIButton9")).click();
 	 			
@@ -58,7 +58,7 @@ public class Approval_UAT_Source {
 	 					Thread.sleep(2000);
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.select_status));
 						driver.findElement(Selectors.select_status).click();
-						driver.findElement(Selectors.boohooApproval).click();
+						driver.findElement(Selectors.testEnvironmentApproval).click();
 						
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.search_get));
 						driver.findElement(Selectors.search_application).sendKeys(str);
@@ -68,7 +68,7 @@ public class Approval_UAT_Source {
 						driver.findElement(Selectors.Review_application).click();
 						wait.until(ExpectedConditions.elementToBeClickable(Selectors.Approve_4));
 						driver.findElement(Selectors.Approve_4).click();
-						driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for boohoo group plc");
+						driver.findElement(Selectors.Ethic_comments).sendKeys("I approve their application to become a supplier for testEnvironment group plc");
 						driver.findElement(Selectors.finance_appConsentBox).click();
 						driver.findElement(Selectors.ethic_Approved).click();
 }
